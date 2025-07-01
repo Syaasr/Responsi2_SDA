@@ -54,7 +54,7 @@ public class GoMartService {
         }
 
         System.out.println("\n--- Checkout ---");
-        System.out.println("Isi Keranjang (dikeluarkan dari Stack LIFO):");
+        System.out.println("Isi Keranjang:");
         while(!keranjang.isEmpty()){
             Pesanan p = keranjang.pop();
             total += p.harga;

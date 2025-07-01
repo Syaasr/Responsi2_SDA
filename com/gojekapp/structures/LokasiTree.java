@@ -1,8 +1,10 @@
 package com.gojekapp.structures;
 import java.util.ArrayList;
 import java.util.List;
+
 public class LokasiTree {
-    private String nama; private int id;
+    private String nama; 
+    private int id;
     private List<LokasiTree> children = new ArrayList<>();
     public LokasiTree(String nama, int id) { this.nama = nama; this.id = id; }
     public void insertChild(LokasiTree child) { this.children.add(child); }
