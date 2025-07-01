@@ -15,7 +15,6 @@ public class GoMartService {
         System.out.println("\n--- GoMart ---");
         System.out.println("\nDaftar Minimarket Terdekat:");
         
-        // Diubah: Ambil node dan tampilkan dengan ID
         List<MinimarketBST.Node> marketList = bst.getNodesInOrder();
         for (int i = 0; i < marketList.size(); i++) {
             MinimarketBST.Node node = marketList.get(i);

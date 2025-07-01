@@ -43,7 +43,6 @@ public class GoCarService {
         return min_index;
     }
     
-    // Diubah: Menghapus format tabel
     private void printMST(int[] parent) {
         System.out.println("\nMenghitung rute efisien yang menghubungkan titik-titik utama...");
         for (int i = 1; i < MAP_SIZE; i++)
@@ -51,7 +50,7 @@ public class GoCarService {
     }
 
     public int handle(Map<Integer, Riwayat> riwayat) {
-        System.out.println("\n--- GoCar ---"); // Menghapus teks struktur data
+        System.out.println("\n--- GoCar ---"); 
         primMST();
         
         System.out.println("\nLayanan GoCar menggunakan tarif flat untuk perjalanan antar titik utama.");

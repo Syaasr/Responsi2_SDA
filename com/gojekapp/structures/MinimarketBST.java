@@ -3,12 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MinimarketBST {
-    // Diubah: Node class menjadi public agar bisa diakses dari GoMartService
     public class Node {
         double jarak; String nama; int rating; Node left, right;
         Node(double j, String n, int r) { jarak=j; nama=n; rating=r; left=right=null; }
         
-        // Menambahkan getter
         public String getNama() { return nama; }
         public double getJarak() { return jarak; }
         public int getRating() { return rating; }
@@ -23,7 +21,6 @@ public class MinimarketBST {
         return root;
     }
 
-    // Ditambah: Method untuk mendapatkan semua node secara terurut (in-order)
     public List<Node> getNodesInOrder() {
         List<Node> list = new ArrayList<>();
         collectInOrder(root, list);

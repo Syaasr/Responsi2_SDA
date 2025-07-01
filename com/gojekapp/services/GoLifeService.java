@@ -17,7 +17,6 @@ public class GoLifeService {
         System.out.println("\n--- GoLife ---");
         System.out.println("Ikuti petunjuk untuk memilih layanan.");
 
-        // Diubah: Memanggil traverse yang baru, dan cek jika null
         LayananBinaryTree resultNode = layananTree.traverse(scanner);
         
         if (resultNode == null) {

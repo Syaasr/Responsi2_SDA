@@ -13,21 +13,20 @@ public class LayananBinaryTree {
     public void setRight(LayananBinaryTree right) { this.right = right; }
     public boolean isLeaf() { return left == null && right == null; }
     
-    // Diubah: Menerima input angka (1, 2, 0)
     public LayananBinaryTree traverse(Scanner scanner) {
         LayananBinaryTree current = this;
         while (!current.isLeaf()) {
             System.out.println("\n" + current.getData());
             System.out.print("Pilihan Anda (1, 2, 0 = Batal): ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
             
             if (choice == 1) {
                 current = current.getLeft();
             } else if (choice == 2) {
                 current = current.getRight();
             } else if (choice == 0) {
-                return null; // Mengembalikan null untuk indikasi batal
+                return null; 
             } else {
                 System.out.println("Input tidak valid, coba lagi.");
             }

@@ -12,13 +12,12 @@ public class GoSendService {
     public GoSendService(Scanner scanner) {
         this.scanner = scanner;
         for (String lokasi : lokasiList) {
-            parent.put(lokasi, lokasi); // Each location is its own parent initially
+            parent.put(lokasi, lokasi); 
         }
         parent.put("HUB-UTARA", "HUB-UTARA");
         parent.put("HUB-SELATAN", "HUB-SELATAN");
         parent.put("PUSAT-SORTIR", "PUSAT-SORTIR");
 
-        // Simulating delivery routes
         union("Jebres", "HUB-UTARA");
         union("Banjarsari", "HUB-UTARA");
         union("Pasar Kliwon", "HUB-SELATAN");
