@@ -1,0 +1,3 @@
+javac com/gojekapp/main/GojekApp.java com/gojekapp/models/*.java com/gojekapp/services/*.java com/gojekapp/structures/*.java com/gojekapp/utils/*.java
+
+java com.gojekapp.main.GojekApp
