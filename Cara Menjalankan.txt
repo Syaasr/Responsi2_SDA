@@ -1,4 +1,4 @@
-Ketik di Command Prompt
+Ketik di Command Prompt bagian folder
 
 javac com/gojekapp/main/GojekApp.java com/gojekapp/models/*.java com/gojekapp/services/*.java com/gojekapp/structures/*.java com/gojekapp/utils/*.java
 
